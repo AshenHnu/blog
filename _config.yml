@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 泡面三分钟
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Ashen
+language: zh-CN
 timezone: ''
 
 # URL
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -97,9 +97,27 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
+# deploy:
+#   type: ''
+
+## Live2D看板娘
+live2d:
+  enable: true
+  pluginModelPath: assets/
+  model:
+    #模板目录，在node_modules里
+    use: live2d-widget-model-shizuku  
+  display:
+    position: right
+    width: 150 
+    height: 300
+  mobile:
+    # 在手机端显示
+    show: false   
+  rect:
+    opacity:0.7
+
